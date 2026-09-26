@@ -1,0 +1,11 @@
+# VS Code user-specific files
+.vscode/*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporay files
+*.temp
+*.bak
+*~
