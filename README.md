@@ -13,9 +13,9 @@
 
 ## Projektstruktur
 
-'''text
+```text
 src/rpg/  RPGLE-Quellcode
 src/cl/   CLLE-Quellcode
 docs/     Projektdokumentation
 .vscode/  projektbezogene VS-Code-/Build-Konfiguration
-'''
+```
