@@ -40,3 +40,15 @@ dsply 'DOU-Schleife beendet';
 dsply 'Weiter mit enter ' '' answer;
 
 return;
+
+// ==================================================================
+// Wichtige Bedingung:
+// dou counter > 5; -> Wiederhole, BIS counter > 5 wahr wird.
+// Bsp.: counter = 1
+// 1
+// 2
+// 3
+// 4
+// 5
+// counter = 6 -> counter > 5 true; Die Schleife endet
+// ==================================================================
