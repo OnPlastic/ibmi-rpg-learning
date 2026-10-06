@@ -54,9 +54,24 @@ end-proc;
 
 
 // ==================================================================
-// Gurndprinzip - Hauptprogramm
+// Grundprinzip - Hauptprogramm
 // -> callp ShowMessage()
 // -> Procedure läuft
 // -> end-proc
 // -> Rückkehr ins Hauptprogramm
+// 
+// Python: 
+// def func(a): 
+//  ...print('Hello World')
+//
+// C#: 
+// public int Func(int a)
+// {
+//  ...
+// }
+//
+// RPG: 
+// DCL-PR
+// DCL-PI
+// DCL-PROC
 // ==================================================================
