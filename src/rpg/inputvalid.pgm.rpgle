@@ -28,6 +28,8 @@ dcl-s number int(10);
 dcl-s answer char(1);
 
 
+// DSPLY mit Eingabevariable: 
+// Prompt anzeigen und Antwort ' ' in input speichern.
 dsply 'Positive ganze Zahl:' '' input;
 
 

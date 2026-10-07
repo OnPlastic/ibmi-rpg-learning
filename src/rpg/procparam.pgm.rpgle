@@ -1,5 +1,6 @@
 **free
 
+// Hauptprogramm mit Procedure-Aufrufen (*no)
 ctl-opt dftactgrp(*no);
 
 // ==================================================================
