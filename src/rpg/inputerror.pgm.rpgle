@@ -58,4 +58,26 @@ return;
 // on-error;
 //  dsply 'Fehler beim Umwandeln'
 // endmon;
+//
+//
+// Unterschied zu Inputvalidation: 
+//
+// INPUTVALID / INPUTRETRY
+//
+// "Kann ich vorher feststellen, dass die Eingabe faslch ist?"
+//
+// 234r5
+// -> %CHECK erkennt das r
+// -> %INT wird gar nicht ausgeführt
+//
+//
+// INPUTERROR
+//
+// "Die Eingabe wird einfach durchgereicht und die Fehler,
+//  welche möglicherweise entstehen behandelt."
+//
+// 234r5
+// -> %INT versucht die Umwandlung zur Zahl
+// -> Laufzeitfehler
+// -> ON-ERROR übernimmt
 // ==================================================================
