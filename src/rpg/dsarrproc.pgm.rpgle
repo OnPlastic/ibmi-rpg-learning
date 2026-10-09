@@ -1,6 +1,6 @@
 **free
 
-ctl-opt dftactgrp(*no)
+ctl-opt dftactgrp(*no);
 
 // ==================================================================
 // DSARRPROC - Array-Element an Procedure uebergeben
@@ -18,7 +18,7 @@ ctl-opt dftactgrp(*no)
 
 
 // Bauplan, Template für einen Kunden
-dcl-ds Customer_t qulified template;
+dcl-ds Customer_t qualified template;
     name varchar(30);
     age int(10);
     city varchar(30);
@@ -59,7 +59,7 @@ for i = 1 to %elem(customers);
     // Das aktuelle Array-Element als Argument uebergeben
     ShowCustomer(customers(i));
 
-end-for;
+endfor;
 
 
 dsply 'Weiter mit Enter' '' answer;

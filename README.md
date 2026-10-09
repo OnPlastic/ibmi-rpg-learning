@@ -8,7 +8,7 @@
 - Host: 'pub400.com'
 - SSH-Port: '2222'
 - User: 'IBM4HUJER'
-- Current Library: 'IBM4HUJER'
+- Current Library: 'IBM4HUJER1'
 - IFS Home: '/home/IBM4HUJER'
 
 ## Projektstruktur
