@@ -78,6 +78,8 @@ endou;
 // Alle gespeicherten Kunden ausgeben
 // ==================================================================
 
+dsply '---KUNDENLISTE---';
+
 for i = 1 to %elem(customers);
 
     ShowCustomer(customers(i));
@@ -106,12 +108,4 @@ dcl-proc ShowCustomer;
     dsply ('Ort: ' + customer.city);
 
 end-proc;
-
-
-// ==================================================================
-// Erklaerungen: 
-// 
-// Die Data Structure wird mit DIM(*AUTO : 100) auf flexibel und 
-// Maximum 100 gesetzt.
-//
-// 
+ 

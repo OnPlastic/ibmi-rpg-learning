@@ -19,6 +19,7 @@ dsply 'Weiter mit Enter' '' answer;
 
 return;
 
+// ==================================================================
 // .pgm Programme
 // .rpgle Source ist ILE-RPG
 // ILE Integrated Language Environment (IBMs Laufzeit-/Build-Modell)
@@ -29,3 +30,4 @@ return;
 // %char(counter) RPG Funktion, Zahl in Text
 // if ...; endif; RPG Bedingung. Ohne Klammern
 // ; Anweisung Ende
+// ==================================================================
