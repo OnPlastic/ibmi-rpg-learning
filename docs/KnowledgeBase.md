@@ -1,5 +1,47 @@
 # RPG Grundwissen & Plattform-Besonderheiten
 
+**Spickzettel für Hilfe-Seiten**
+|**Symbol in der Hilfe**|**Bedeutung**|**Erklaerung**|
+| --- | --- | --- |
+|`[] Eckige Klammer`|**optional**|Alles hierin *kann* geschrieben werden, muss aber nicht.|
+|`<> Spitze Klammer`|**Platzhalter/Pflicht**|Hier kannst du nicht `<text>` eingeben, sondern musst einen *eigenen* Wert setzen|
+|`!Pipe`|**Entweder/Oder**|Du musst dich fuer eine Option entscheiden|
+|`... Drei Punkte`|Wiederholbar|Hier koennen mehrere Werte des gleichen Typs hintereinader folgen|
+
+**Beispiel:** 
+
+`CRTLIB` `LIB(<Name>)` `[TYPE(*PROD|*TEST)]` 
+
+*Uebersetzung*
+1. Der Befehl heisst `CRTLIB` = Create Library
+2. Du *musst* den Parameter `LIB` mit einem eigenen `<Name>` befüllen (z.B. `LIB(MEINELIB)`).
+3. In den eckigen Klammern steht ein optionaler Typ. Wenn du ihn nutzt, musst du dich *entweder* für `*PROD` oder `*TEST` entscheiden. 
+
+**CL-Befehle** (*Command Line - GreenScreen*)
+
+Die typischen Verben (Aktionen)
+* `CRT` = Create
+* `DLT` = Delete
+* `WRK` = Work with (Arbeiten mit - öffnet eine interaktive Liste)
+* `CHG` = Change (Ändern / Modifizieren)
+* `DSP` = Display (Anzeigen - nicht Editieren)
+
+Die typischen Nomen (Objekte)
+* `LIB` = Library
+* `PGM` = Program
+* `USR` = User
+* `JOB` = Job (ein aktiver Prozess)
+* `F` = File (Datei / Datenbanktabelle)
+
+Kombinationen
+* `DLTLIB` = Delete Library
+* `WRKLIB` = Work with Libraries (mit Bibliothek arbeiten / Liste anzeigen)
+* `CRTPGM` = Create Program (Ein RPG-Programm aus Code kompilieren)
+* `WRKACTJOB` = Work wiht Active Jobs (der "Task-Manager" der IBM i - mit aktiven Jobs arbeiten)
+* `CHGUSRPRF` = Change User Profile ( ein Benutzerprofil ändern)
+
+
+
 ## 1. Datentypen: CHAR vs. VARCHAR (Das Luftballon-Prinzip)
 
 * **CHAR(X):** Fester Block. Füllt ungenutzten Platz mit Leerzeichen auf (`'Tom       '`).
@@ -12,6 +54,7 @@
 * **Limit:** Maximal 52 Zeichen (Nachricht + Eingabe).
 * **Verhalten:** Akzeptiert *nur* feste `CHAR`-Felder. Füllt Zielvariablen bei kurzen Eingaben mit Leerzeichen auf.
 * **Workaround:** Immer ein `tempCHAR`-Feld für die Eingabe nutzen und mit `%trim()` in `VARCHAR` überführen.
+
 
 ## 3. IBM i & RPG Abkürzungsverzeichnis (Glossar)
 
