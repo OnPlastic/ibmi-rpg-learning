@@ -71,7 +71,7 @@ dou another <> 'J';
 
     dsply 'Weiteren Kunden eingeben? J/N' '' another;
 
-endou;
+enddo;
 
 
 // ==================================================================

@@ -37,10 +37,10 @@ end-ds;
 // Mit DIM(*AUTO : max) kann die aktuelle Anzahl der Elemente
 // flexibel anwachsen, die maximale Groesse wird aber weiterhin
 // vorher festgelegt.
-dcl-ds customers likeds(Customers_t) dim(3);
+dcl-ds customers likeds(Customer_t) dim(3);
 
 
-dcl-s i input(10);
+dcl-s i int(10);
 dcl-s answer char(1);
 
 
