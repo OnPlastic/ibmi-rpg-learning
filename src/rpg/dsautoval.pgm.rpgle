@@ -82,9 +82,9 @@ dou another = 'N';
     enddo;
 
 
-    // ==================================================================
+    // ==============================================================
     // Alter validieren
-    // ==================================================================
+    // ==============================================================
 
     clear ageInput;
     invalidPos = 0;
@@ -103,7 +103,8 @@ dou another = 'N';
         
         elseif invalidPos > 0;
 
-            dsply ('Ungueltiges Zeichen an Stelle ' + %char(invalidPos));
+            dsply ('Ungueltiges Zeichen an Stelle ' 
+                + %char(invalidPos));
         
         elseif %len(%trim(ageInput)) > 3;
 
