@@ -9,3 +9,6 @@ Desktop.ini
 *.temp
 *.bak
 *~
+
+# VS Code Einstellungen (Connection Settings, Privat!)
+.vscode/
