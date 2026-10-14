@@ -92,3 +92,8 @@ Kombinationen
 * **G** = Continue processing at *GETIN - RPG versucht, bei der internen *GETIN-Verarbeitung weiterzumachen
 * **D** = RPG formatted dump - RPG-Dump erzeugen
 * **F** = Full formatted dump - vollständigen Dump erzeugen
+
+## 6. SQL Besonderheiten
+* Create Table kennt kein 'if not exists'
+* im Objekt-Browswer musst du einen filter für sql-tabellen anlegen sonst taucht nichts auf.
+* die Abkürzung `PF` hinter der Tabelle bedeutet **physikal file**
