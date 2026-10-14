@@ -85,3 +85,10 @@ Kombinationen
 * **Optionen mit Sternchen (`*`):** Das sind sogenannte "System-Keywords" (vordefinierte Werte des Betriebssystems).
 * **Der Zweck:** Die IBM i trennt strikt zwischen Live-Betrieb (`*PROD`) und Entwicklungs-/Testbetrieb (`*TEST`). 
 * **Schutzmechanismus:** Das Betriebssystem verhindert im Debug-Modus automatisch den Schreibzugriff auf `*PROD`-Bibliotheken, um die echten Geschäftsdaten vor Programmierfehlern zu schützen.
+
+## 5. Laufzeitfehler und Kompilermeldungen
+* **RPG-Inquiry-Meldung:** - Diese Auswahl wird bei solchen Laufzeitfehlern vom System angeboten.
+* **C** = Cancel - Programm abbrechen
+* **G** = Continue processing at *GETIN - RPG versucht, bei der internen *GETIN-Verarbeitung weiterzumachen
+* **D** = RPG formatted dump - RPG-Dump erzeugen
+* **F** = Full formatted dump - vollständigen Dump erzeugen
