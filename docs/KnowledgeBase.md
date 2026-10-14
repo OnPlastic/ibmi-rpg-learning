@@ -97,3 +97,28 @@ Kombinationen
 * Create Table kennt kein 'if not exists'
 * im Objekt-Browswer musst du einen filter für sql-tabellen anlegen sonst taucht nichts auf.
 * die Abkürzung `PF` hinter der Tabelle bedeutet **physikal file**
+```
+CUSTOMER
+→ *FILE
+→ PF
+→ SQL-Tabelle / Geschäftsdaten
+
+QRPGLESRC usw.
+→ *FILE
+→ Source Physical File
+→ enthält Source-Member
+
+RPG-Programme
+→ *PGM
+```
+
+```
+IFS
+→ customer.sql        Quelltext
+
+Object Browser
+→ CUSTOMER.FILE (PF)  Datenbankobjekt
+
+RPG Programs
+→ *.PGM               kompilierte Programme
+```
