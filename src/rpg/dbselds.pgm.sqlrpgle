@@ -130,5 +130,21 @@ endif;
 
 dsply 'Weiter mit ENTER' '' answer;
 
+// Erläuterung wegen Tippfehler:  dsply 'Weiter mit Enter ''' answer; 
+// ------------------------------------------------------------------
+// Bei DSPLY muessen die Operanden eindeutig getrennt sein:
+//
+// dsply 'Weiter mit Enter' '' answer;
+//
+// 'Weiter mit Enter' = Nachricht
+// ''                 = keine explizite Message Queue
+// answer             = Response-Variable
+//
+// Zwischen dem Ende des Nachrichten-Strings und dem leeren
+// zweiten String muss eine Trennung stehen.
+//
+// Ohne diese Trennung koennen aufeinanderfolgende Hochkommas
+// als Teil desselben String-Literals interpretiert werden.
+
 
 return;
