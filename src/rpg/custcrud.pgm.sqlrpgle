@@ -323,7 +323,7 @@ dcl-proc AddCustomer;
     dcl-s existingId int(10);
     dcl-s invalidPos int(10);
 
-    dcl-s validId ind inz(*off);
+    dcl-s validId ind inz(*off); // IND=Indicator / Wahr-Falsch-Wert
     dcl-s answer char(1);
 
 
